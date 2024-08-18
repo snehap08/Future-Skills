@@ -9,9 +9,9 @@ app.use(express.json());
 app.use(cors());
 
 // Basic endpoint to check if the server is running
-// app.get('/ping', (req, res) => {
-//   res.send('Pong!');
-// });
+app.get('/ping', (req, res) => {
+  res.send('Pong!');
+});
 
 //API endpoint for card creation
 app.post('/api/cards', async(req, res)=>{
